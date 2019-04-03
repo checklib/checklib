@@ -1,5 +1,7 @@
 # Set up git
 
+Set up and configure git on your system
+
 - [ ] Install `git`
 - [ ] Configure `git`
     * [ ] configure `user.name`

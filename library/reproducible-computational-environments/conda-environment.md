@@ -1,6 +1,6 @@
 # Conda Environments
 
-Building / recording Conda Environment setup, for ensuring reproducable environments.
+Building Conda Environment setup, for ensuring reproducible environments.
 
 Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html
 
