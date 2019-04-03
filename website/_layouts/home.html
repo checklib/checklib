@@ -10,11 +10,28 @@ layout: default
   {{ content }}
 
   {% for checklist in site.checklists %}
-    <h2>{{ checklist.title }}</h2>
+  <article class="checklib-item">
+    <h2 class="checklib-item-title">{{ checklist.title }}</h2>
     <p>{{ checklist.description }}</p>
-<textarea>
+    <details>
+      <summary>Show full checklist</summary>
+      {{ checklist.content }}
+    </details>
+    <div class="form-group">
+      <textarea  id="checklib-item-{{ checklist.id | replace: '/','_' }}" class="form-control">
 {{ checklist.raw_content }}
-</textarea>
+      </textarea>
+    </div>
+
+    <button
+      class="btn btn-small btn-primary btn-copy-to-clipboard"
+      data-clipboard-target="#checklib-item-{{ checklist.id | replace: '/','_' }}">Copy as markdown</button>
+
+
+    <a class="btn btn-secondary"
+      download="checklib{{ checklist.id | replace: '/checklists','' | replace: '/','-' }}.md"
+      href="data:text/plain;base64,{{ checklist.raw_content | base64_encode }}">Download</a>
+  </article>
   {% endfor %}
 
 </div>
