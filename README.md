@@ -69,12 +69,12 @@ Certainly.  [*INSERT MORE INFORMATION HERE*]
 
 ## How Do I Get Support?
 
-If ever you need anything, head over to our [support page](../blob/master/SUPPORT.md) to see how we can help.
+If ever you need anything, head over to our [support page](SUPPORT.md) to see how we can help.
 
 ## This Is Awesome&mdash;How Can I Contribute?
 
-We're glad you asked.  We're always happy to have new collaborators.  For details on our workflow, check out our [contributing guidelines](../blob/master/CONTRIBUTING.md).
+We're glad you asked.  We're always happy to have new collaborators.  For details on our workflow, check out our [contributing guidelines](CONTRIBUTING.md).
 
 ## License
 
-For our licensing information, check out our [LICENSE](../blob/master/LICENSE) file.
+For our licensing information, check out our [LICENSE](LICENSE) file.
