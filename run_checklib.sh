@@ -10,7 +10,6 @@ usage()
     echo "bash ./run_checklib.sh --github conda-environment.md sharing-material.md"
 }
 
-
 if [[ $# -eq 0 ]]; then
     usage
     exit 1
@@ -46,6 +45,8 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 set -- "${positional[@]}"
+
+repoRoot=$(pwd)
 
 if [ "${ls_lists}" == "true" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
 then
@@ -114,9 +115,9 @@ else
         # Supply the checklist to the github/lab-ification script which will make it GitHub/GitLab ready.
 	cd $destination_path
 	if [[ "${github}" == "true" ]]; then
-            ./scripts/github-ify $checklist
+            ${repoRoot}/scripts/github-ify $checklist
         else
-            ./scripts/gitlab-ify $checklist
+            ${repoRoot}/scripts/gitlab-ify $checklist
         fi
 	cd -
 
