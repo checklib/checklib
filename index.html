@@ -3,7 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/checklib/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/checklib/feed.xml" title="checklib" /></head>
+  <link rel="stylesheet" href="/checklib/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/checklib/assets/main.css">
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/checklib/">checklib</a><nav class="site-nav">
@@ -25,6 +27,136 @@
 
 
   
+  <article class="checklib-item">
+    <h2 class="checklib-item-title">Conda Environments</h2>
+    <p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+    <details>
+      <summary>Show full checklist</summary>
+      <h1 id="conda-environments">Conda Environments</h1>
+
+<p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+
+<p>Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html</p>
+
+<h3 id="prerequiste-knowledge">Prerequiste knowledge</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />command line basic knowledge</li>
+</ul>
+
+<h3 id="setup">Setup</h3>
+
+<p>Installing Conda / Anaconda on your system.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 2.X</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 3.X</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />install anaconda</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />check conda is installed (and record version number) <code class="highlighter-rouge">conda --version</code></li>
+</ul>
+
+<h3 id="usage">Usage</h3>
+
+<p>Creating a conda environment, and accessing it.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda create --name [project_name] [optional_package_list]</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda activate [project_name]</code></li>
+</ul>
+
+<p>Adding new packages to your environment</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda install -c [channel_name] [package_name]</code></li>
+</ul>
+
+<h3 id="environment-recording">Environment Recording</h3>
+
+<p>The conda environment setup can be saved as a YAML file.</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda env export &gt; environment.yml</code></li>
+</ul>
+
+    </details>
+    <div class="form-group">
+      <textarea  id="checklib-item-_checklists_zenodo" class="form-control">
+# Conda Environments
+
+Building / recording Conda Environment setup, for ensuring reproducable environments.
+
+Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html
+
+### Prerequiste knowledge
+- [ ] command line basic knowledge
+
+### Setup
+
+Installing Conda / Anaconda on your system.
+- [ ] download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+  - [ ] python 2.X
+  - [ ] python 3.X
+- [ ] install anaconda
+- [ ] check conda is installed (and record version number) `conda --version`
+
+
+### Usage
+
+Creating a conda environment, and accessing it.
+- [ ] `conda create --name [project_name] [optional_package_list]`
+- [ ] `conda activate [project_name]`
+
+Adding new packages to your environment
+
+- [ ] `conda install -c [channel_name] [package_name]`
+
+
+
+### Environment Recording
+
+The conda environment setup can be saved as a YAML file.
+
+- [ ] `conda env export > environment.yml`
+
+      </textarea>
+    </div>
+
+    <button
+      class="btn btn-small btn-primary btn-copy-to-clipboard"
+      data-clipboard-target="#checklib-item-_checklists_zenodo">Copy as markdown</button>
+
+
+    <a class="btn btn-secondary"
+      download="checklib-zenodo.md"
+      href="data:text/plain;base64,IyBDb25kYSBFbnZpcm9ubWVudHMKCkJ1aWxkaW5nIC8gcmVjb3JkaW5nIENv
+bmRhIEVudmlyb25tZW50IHNldHVwLCBmb3IgZW5zdXJpbmcgcmVwcm9kdWNh
+YmxlIGVudmlyb25tZW50cy4KCkFkdmljZSBvbiByZXByb2R1Y2libGUgZW52
+aXJvbm1lbnRzIGlzIGF2YWlsYWJsZSBpbiB0aGUgVHVyaW5nIFdheSBib29r
+OiBodHRwczovL3RoZS10dXJpbmctd2F5Lm5ldGxpZnkuY29tL3JlcHJvZHVj
+aWJsZV9lbnZpcm9ubWVudHMvcmVwcm9kdWNpYmxlX2Vudmlyb25tZW50cy5o
+dG1sCgojIyMgUHJlcmVxdWlzdGUga25vd2xlZGdlCi0gWyBdIGNvbW1hbmQg
+bGluZSBiYXNpYyBrbm93bGVkZ2UKCiMjIyBTZXR1cAoKSW5zdGFsbGluZyBD
+b25kYSAvIEFuYWNvbmRhIG9uIHlvdXIgc3lzdGVtLgotIFsgXSBkb3dubG9h
+ZCBpbnN0YWxsYXRpb24gc29mdHdhcmUgZnJvbSBodHRwczovL3d3dy5hbmFj
+b25kYS5jb20vZGlzdHJpYnV0aW9uLywgYW5kIG5vdGUgYmVsb3cgd2hpY2gg
+dmVyc2lvbiB5b3UgYXJlIHVzaW5nIChweXRob24gMy5YIGlzIG5vdyByZWNv
+bW1lbmRlZCkKICAtIFsgXSBweXRob24gMi5YCiAgLSBbIF0gcHl0aG9uIDMu
+WAotIFsgXSBpbnN0YWxsIGFuYWNvbmRhCi0gWyBdIGNoZWNrIGNvbmRhIGlz
+IGluc3RhbGxlZCAoYW5kIHJlY29yZCB2ZXJzaW9uIG51bWJlcikgYGNvbmRh
+IC0tdmVyc2lvbmAKCgojIyMgVXNhZ2UKCkNyZWF0aW5nIGEgY29uZGEgZW52
+aXJvbm1lbnQsIGFuZCBhY2Nlc3NpbmcgaXQuCi0gWyBdIGBjb25kYSBjcmVh
+dGUgLS1uYW1lIFtwcm9qZWN0X25hbWVdIFtvcHRpb25hbF9wYWNrYWdlX2xp
+c3RdYAotIFsgXSBgY29uZGEgYWN0aXZhdGUgW3Byb2plY3RfbmFtZV1gCgpB
+ZGRpbmcgbmV3IHBhY2thZ2VzIHRvIHlvdXIgZW52aXJvbm1lbnQKCi0gWyBd
+IGBjb25kYSBpbnN0YWxsIC1jIFtjaGFubmVsX25hbWVdIFtwYWNrYWdlX25h
+bWVdYAoKCgojIyMgRW52aXJvbm1lbnQgUmVjb3JkaW5nCgpUaGUgY29uZGEg
+ZW52aXJvbm1lbnQgc2V0dXAgY2FuIGJlIHNhdmVkIGFzIGEgWUFNTCBmaWxl
+LgoKLSBbIF0gYGNvbmRhIGVudiBleHBvcnQgPiBlbnZpcm9ubWVudC55bWxg
+Cg==
+">Download</a>
+  </article>
+  
 
 </div>
 
@@ -37,6 +169,6 @@
     <p>checklib is a library of checklists to aid you in all your software sustainability and reproducibility needs!</p><ul class="social-media-list"><li><a href="https://github.com/annakrystalli%2Fchecklib"><svg class="svg-icon"><use xlink:href="/checklib/assets/minima-social-icons.svg#github"></use></svg> <span class="username">annakrystalli/checklib</span></a></li></ul>
 </div>
 </footer>
-</body>
-
+</body><script src="/checklib/assets/js/clipboard.min.js"></script>
+<script src="/checklib/assets/js/main.js" /></script>
 </html>

@@ -503,3 +503,23 @@ table {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.checklib-item-title {
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.checklib-item details h1, .checklib-item details h2 {
+  font-size: 1.25rem; }
+.checklib-item details h3 {
+  font-size: 1rem; }
+.checklib-item details h4, .checklib-item details h5, .checklib-item details h6 {
+  font-size: 1rem; }
+
+.task-list {
+  list-style: none; }
+  .task-list input {
+    margin-right: 0.25rem; }
+
+.svg-icon {
+  width: 22px;
+  margin-top: 6px; }
