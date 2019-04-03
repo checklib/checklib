@@ -45,7 +45,7 @@ while [[ $# -gt 0 ]]; do
             ;;
     esac
 done
-set -- "${POSITIONAL[@]}"
+set -- "${positional[@]}"
 
 if [ "${ls_lists}" == "true" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
 then
