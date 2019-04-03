@@ -41,7 +41,36 @@ then
 
     exit 0
 else
-    echo 'copy the files'
+    # Copy all the specified checklists to the project repository
+
+    # Get the path to the respository to the user
+    read -p "Please supply the path of your repository: "  repo_path 
+
+    # If the repo doesn't already have a issue templates directory then make one
+    # First get the path that would lead to the repos issue templates
+    suffix_a='/.github'
+    destination_path=$repo_path$suffix_a
+    mkdir -p $destination_path
+    suffix_b='/ISSUE_TEMPLATE/'
+    destination_path=$repo_path$suffix_a$suffix_b
+    mkdir -p $destination_path
+
+    # Go through all the checklists to copy
+    for checklist in "$@"
+    do 
+        # Get the full path to the checklist
+        path_to_checklist=`ls library/*/*$checklist`
+
+
+        # Copy the checklist into the target directory
+        cp $path_to_checklist $destination_path$checklist
+
+
+        # Supply the checklist to the githubification script which will make it github ready
+        ./scripts/github-ify $destination_path$checklist
+
+    done 
+
 fi
 
 
