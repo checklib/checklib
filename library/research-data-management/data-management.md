@@ -1,39 +1,47 @@
-# Conda Environments
+# Data Management
 
-Building / recording Conda Environment setup, for ensuring reproducable environments.
+Managing research data.
 
-Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html
+Advice on research data management is available in the Turing Way book: https://the-turing-way.netlify.com/rdm/rdm.html
 
 ### Prerequiste knowledge
-- [ ] command line basic knowledge
+- [ ] things?
 
-### Setup
+### Raw Data Safety
 
-Installing Conda / Anaconda on your system.
-- [ ] download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
-  - [ ] python 2.X
-  - [ ] python 3.X
-- [ ] install anaconda 
-- [ ] check conda is installed (and record version number) `conda --version`
-
-
-### Usage
-
-Creating a conda environment, and accessing it.
-- [ ] `conda create --name [project_name] [optional_package_list]`
-- [ ] `conda activate [project_name]`
-
-Adding new packages to your environment
-
-- [ ] `conda install -c [channel_name] [package_name]`
+- [ ] Back up raw data to a safe location
+  - [ ] NOTE: location of raw data
+  - [ ] NOTE: format of raw data
+  - [ ] NOTE: raw data ID (md5 hash sum, or similar)
 
 
 
-### Environment Recording
+### GDPR
 
-The conda environment setup can be saved as a YAML file.
+Does your dataset contain senstive personal data, if so then ensure you will be following GDPR guidelines.
 
-- [ ] `conda env export > environment.yml`
+GDPR compliance:
+- [ ] This data is not sensitive, and GDPR is unneeded
+- [ ] GDPR guidelines have been followed
+  - [ ] NOTE/UPLOAD: How are you complying with GDPR 
+
+  
 
 
+
+### Documentation Plan
+
+Decide on how you will document your data processing.
+
+- [ ] NOTE: documentation tool (googledocs/evernote/etc)
+- [ ] NOTE: lab book / document space name 
+
+
+
+### Tool Sources
+
+What tools & formats will you use for data processing:
+
+- [ ] NOTE: data format to use
+- [ ] NOTE: language / toolkit
 

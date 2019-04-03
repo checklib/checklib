@@ -1,8 +1,17 @@
+language: ruby
+
+script: echo "TODO add tests!"
+
+before_deploy:
+  - gem install bundler jekyll
+  - cd $TRAVIS_BUILD_DIR/website && bundler install
+  - cd $TRAVIS_BUILD_DIR/website && jekyll build
+
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_PAT  # Set in the settings page of your repository, as a secure variable
   keep_history: true
+  local_dir: website/_site
   on:
     branch: master
-    

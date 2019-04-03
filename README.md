@@ -1,5 +1,7 @@
 # checklib
 
+[![Build Status](https://travis-ci.org/annakrystalli/checklib.svg?branch=master)](https://travis-ci.org/annakrystalli/checklib)
+
 Welcome to **checklib**&mdash;a library of checklists to aid you in all your software sustainability and reproducibility needs!
 
 ## What Are These Checklists?
