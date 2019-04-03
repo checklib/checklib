@@ -46,10 +46,6 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 set -- "${POSITIONAL[@]}"
-if [[ "${github}" == "false" && "${gitlab}" == "false" && "${ls_lists}" == "false"]]; then
-    echo "You must specify either --github or --gitlab."
-    exit 1
-fi
 
 if [ "${ls_lists}" == "true" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
 then
@@ -86,6 +82,10 @@ then
     exit 0
 else
     # Copy all the specified checklists to the project repository
+    if [[ "${github}" == "false" && "${gitlab}" == "false"]]; then
+        echo "You must specify either --github or --gitlab."
+        exit 1
+    fi
 
     # Get the path to the respository to the user
     read -p "Please supply the path of your repository: "  repo_path 
