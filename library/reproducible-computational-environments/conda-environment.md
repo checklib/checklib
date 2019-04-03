@@ -1,16 +1,13 @@
 # Conda Environments
 
-- [ ] [prerequiste knowledge](#prerequiste-knowledge)
-- [ ] [setup conda](#setup-conda)
-- [ ] 
-
-
-
-
-
 Building / recording Conda Environment setup, for ensuring reproducable environments.
 
 Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html
+
+- [ ] [prerequiste knowledge](#prerequiste-knowledge)
+- [ ] [setup conda](#setup-conda)
+
+
 
 ### Prerequiste knowledge
 - [ ] command line basic knowledge
