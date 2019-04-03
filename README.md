@@ -17,6 +17,8 @@ Have you ever found yourself wondering, "Gosh, I know I'm supposed to be doing [
 
 Once you have access to them, how you use them depends on what git hosting service you're using.
 
+> **Note:**  The following instructions are meant to give you an idea of how things might work.  This implementation will likely change.
+
 ### GitHub
 
 - [ ] First you'll need to set your repository up with a directory to hold issue templates.
@@ -67,7 +69,7 @@ Now when users go to create a new issue through the GitLab interface, there will
 
 ## Can I Customize Them to Suit My Needs?
 
-Certainly.  [*INSERT MORE INFORMATION HERE*]
+Certainly.  Once you've copied them into your repository and they're all set up as issue templates, feel free to customize them to your heart's content.  If you come up with something that would be useful for the research software engineering community at large, please [send it back to us via pull request](CONTRIBUTING.md#submit-pull-requests).
 
 ## How Do I Get Support?
 
