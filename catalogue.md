@@ -31,3 +31,9 @@
 ## Reproducible computational environments
 
 - [ ] Make your computational environment reproducible
+
+## Continuous integration
+
+- [ ] Put a project on Github
+- [ ] Write & add a .travis.yml file to the repository
+- [ ] Activate Travis on the repository
