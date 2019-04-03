@@ -62,7 +62,7 @@ as the first line of the file.  The first two characters must be `#` followed by
 
 ### Checklist Filenames
 
-Our file naming convention is to keep all text lowercase and to use hyphens in place of spaces (e.g., `authenticating-github.md`).  If, however, you are creating a variant of a general checklist, it's name should be the name of the original checklist, followed by an underscore, followed by the variant indicator (e.g., `authenticating-github_R.md`).
+Our file naming convention is to keep all text lowercase and to use hyphens in place of spaces (e.g., `authenticating-github.md`).  If, however, you are creating a variant of a general checklist, it's name should be the name of the original checklist, followed by an underscore, followed by the variant indicator (e.g., `authenticating-github_R.md`).  The extension for all checklists should be `.md`.
 
 ## Code of Conduct
 
