@@ -1,6 +1,6 @@
 ---
 title: Conda Environments
-section: publishing-materials
+section: sharing-materials
 description: Building / recording Conda Environment setup, for ensuring reproducable environments.
 ---
 
@@ -19,7 +19,7 @@ Installing Conda / Anaconda on your system.
 - [ ] download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
   - [ ] python 2.X
   - [ ] python 3.X
-- [ ] install anaconda
+- [ ] install anaconda 
 - [ ] check conda is installed (and record version number) `conda --version`
 
 
@@ -40,3 +40,6 @@ Adding new packages to your environment
 The conda environment setup can be saved as a YAML file.
 
 - [ ] `conda env export > environment.yml`
+
+
+

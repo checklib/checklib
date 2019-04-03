@@ -43,3 +43,4 @@ exclude:
   - vendor/ruby/
   - README.md
   - LICENSE.txt
+  - update-checklists.py

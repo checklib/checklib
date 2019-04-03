@@ -24,14 +24,15 @@ layout: default
     </div>
 
     <button
-      class="btn btn-small btn-primary btn-copy-to-clipboard"
-      data-clipboard-target="#checklib-item-{{ checklist.id | replace: '/','_' }}">Copy as markdown</button>
-
-
+    class="btn btn-small btn-primary btn-copy-to-clipboard"
+    data-clipboard-target="#checklib-item-{{ checklist.id | replace: '/','_' }}">Copy as markdown</button>
     <a class="btn btn-secondary"
-      download="checklib{{ checklist.id | replace: '/checklists','' | replace: '/','-' }}.md"
-      href="data:text/plain;base64,{{ checklist.raw_content | base64_encode }}">Download</a>
-  </article>
+    download="checklib{{ checklist.id | replace: '/checklists','' | replace: '/','-' }}.md"
+    href="data:text/plain;base64,{{ checklist.raw_content | base64_encode }}">Download</a>
+    <div>
+      <small>Copy into a new issue, or download and save into a repository's <code>.github/ISSUE_TEMPLATE/</code> folder</small>
+    </div>
+    </article>
   {% endfor %}
 
 </div>
