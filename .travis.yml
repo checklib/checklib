@@ -4,6 +4,7 @@ script: echo "TODO add tests!"
 
 before_deploy:
   - gem install bundler jekyll
+  - cd $TRAVIS_BUILD_DIR/website && bundler install
   - cd $TRAVIS_BUILD_DIR/website && jekyll build
 
 deploy:
