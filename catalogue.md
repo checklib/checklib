@@ -37,3 +37,7 @@
 - [ ] Put a project on Github
 - [ ] Write & add a .travis.yml file to the repository
 - [ ] Activate Travis on the repository
+
+## Research data management
+
+- Curate document and share the data
