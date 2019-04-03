@@ -94,12 +94,13 @@ else
     # If the repo doesn't already have a issue templates directory then make one
     # First get the path that would lead to the repos issue templates
     if [[ "${github}" == "true" ]]; then
-        suffix='/.github/ISSUE_TEMPLATE/'
+        suffix='.github/ISSUE_TEMPLATE'
     else
-        suffix='/.gitlab/issue_templates/'
+        suffix='.gitlab/issue_templates'
     fi
-    destination_path=$repo_path$suffix
-    mkdir -p $destination_path
+    cd $repo_path
+    mkdir -p $suffix
+    cd -
 
     # Go through all the checklists to copy
     for checklist in "$@"
@@ -109,11 +110,11 @@ else
 
 
         # Copy the checklist into the target directory
-        cp $path_to_checklist $destination_path$checklist
+        cp $path_to_checklist $repo_path/$suffix/$checklist
 
 
         # Supply the checklist to the github/lab-ification script which will make it GitHub/GitLab ready.
-	cd $destination_path
+	cd $repo_path/$suffix
 	if [[ "${github}" == "true" ]]; then
             ${repoRoot}/scripts/github-ify $checklist
         else
