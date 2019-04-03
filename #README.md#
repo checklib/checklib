@@ -14,18 +14,10 @@ Have you ever found yourself wondering, "Gosh, I know I'm supposed to be doing [
    ```bash
    git clone https://github.com/annakrystalli/checklib
    ```
-- You will also need a local copy of the project you wish to add checklists to. If you do not have one clone one.
-- [ ] Run the checklib tool by running `bash ./run_checklib`. If you don't supply any arguments (or supply the argument --help) the tool will output information explaining how to use the tool.
-- [ ] Get a list of the avaiable checklists divided by subject use the --ls_lists flag: `bash ./run_checklib --ls_lists`
-- [ ] To add checklists to your project:
-  - [ ] Go to the top level of your copy of this repository 
-  - [ ] Use the --ls_lists flag to decide which checklists you would like to include in your project
-  - [ ] Run the run_checklib script with those checklists as arguments. For example to add the conda-environment.md and sharing-material.md checklists you would run `bash ./run_checklib.sh conda-environment.md sharing-material.md`
-  - [ ] When prompted to by the script supply the path to your project's repository.
 
-### GitHub
+Once you have access to them, how you use them depends on what git hosting service you're using.
 
-Use the command line tool to add checklists as issue templates as described above. The push your repo to GitHub.
+In a local copy of your repo use the command line tool to add checklists as issue templates using 
 
 Now when users go to create a new issue through the GitHub interface, they'll be presented with a list of templates from which to choose.  Once they've selected one, the new issue page pops up with the description populated with your brand new checklist.
 
