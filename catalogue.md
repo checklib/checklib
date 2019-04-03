@@ -6,4 +6,7 @@
 
 ## Sharing on GitHub
 
+- [ ] Set up GitHub authorisation through https: generate GitHub Personal Authorisation Token and 
+
+
 
