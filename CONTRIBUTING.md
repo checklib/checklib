@@ -23,7 +23,7 @@ We'll happily consider any improvements you'd like to make to **checklib**.  The
    ```
    > **Note:**  Ideally, you'll be working on something that's already described in an issue.  If an issue does not yet exist, please [create the issue](https://github.com/annakrystalli/checklib/issues/new/choose) first.  For the branch name, use the convention of `<issue number>-<issue title>`, where `<issue title>` is all lowercase, with special characters removed, and with spaces replaced with hyphens.  E.g., `123-my-awesome-feature`.
 - [ ] Make small work-in-progress commits as you go.
-- [ ] When your work is ready for review, push your branch up to your fork and create a pull request.
+- [ ] When your work is ready for review, push your branch up to your fork and create a pull request.  The description will be populated with a template for you to fill out.
    ```bash
    git push -u origin <branch name>
    ```
