@@ -10,18 +10,21 @@ Have you ever found yourself wondering, "Gosh, I know I'm supposed to be doing [
 
 ## How Do I Use Them?
 
-- [ ] The first step is to go ahead and clone our repository so you have access to the checklists.
+The project consists of a library of markdown checklists and a simple command line tool for incorporating checklists as GitHub issue templates into your own projects. 
+
+Currently you need a local copy of the checklist library to use the tool, as well as a local copy of the project you wish to add checklists to. 
+
+- [ ] The first step is to go ahead and clone `checklib` so you have local access to the checklists.
    ```bash
    git clone https://github.com/annakrystalli/checklib
    ```
-   Make sure to pull before using, to ensure you have an up to date version of the checklists.
-- You will also need a local copy of the project you wish to add checklists to. If you do not have one, clone one.
-- [ ] Run the checklib tool by running `bash ./run_checklib`. If you don't supply any arguments (or supply the argument --help) the tool will output information explaining how to use the tool.
-- [ ] Get a list of the avaiable checklists divided by subject use the --ls_lists flag: `bash ./run_checklib --ls_lists`
+   Make sure to pull before using each time to ensure you have an up to date version of the checklists.
+- [ ] Navigate to the root of your local copy of `checklib`.
+- [ ] Run the checklib tool by running `bash ./run_checklib.sh`. If you don't supply any arguments (or supply the argument --help) the tool will output information explaining how to use the tool.
+- [ ] To get a list of the available checklists divided by subject use the --ls_lists flag: `bash ./run_checklib.sh --ls_lists`
 - [ ] To add checklists to your project:
-  - [ ] Go to the top level of your copy of this repository 
   - [ ] Use the --ls_lists flag to decide which checklists you would like to include in your project
-  - [ ] Run the run_checklib script with those checklists as arguments. For example to add the conda-environment.md and sharing-material.md checklists you would run `bash ./run_checklib.sh conda-environment.md sharing-material.md`
+  - [ ] Run the run_checklib script with those checklists as arguments. For example to add the conda-environment.md and sharing-material.md checklists you would run `bash ./run_checklib.sh conda-environment.md set-up-repository.md`
   - [ ] When prompted to by the script supply the path to your project's repository.
 
 ### GitHub
