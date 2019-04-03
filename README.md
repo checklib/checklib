@@ -21,19 +21,29 @@ Currently you need a local copy of the checklist library to use the tool, as wel
    Make sure to pull before using each time to ensure you have an up to date version of the checklists.
 - [ ] Navigate to the root of your local copy of `checklib`.
 - [ ] Run the checklib tool by running `bash ./run_checklib.sh`. If you don't supply any arguments (or supply the argument --help) the tool will output information explaining how to use the tool.
-- [ ] To get a list of the available checklists divided by subject use the --ls_lists flag: `bash ./run_checklib.sh --ls_lists`
-- [ ] To add checklists to your project:
-  - [ ] Use the --ls_lists flag to decide which checklists you would like to include in your project
-  - [ ] Run the run_checklib script with those checklists as arguments. For example to add the conda-environment.md and sharing-material.md checklists you would run `bash ./run_checklib.sh conda-environment.md set-up-repository.md`
-  - [ ] When prompted to by the script supply the path to your project's repository.
 
-### GitHub
+#### View available checklists
+
+In the `checklib` root:
+- [ ] Get a list of the available checklists divided by subject use the --ls_lists flag: `bash ./run_checklib.sh --ls_lists`
+
+#### Add checklists to your project:
+
+In the `checklib` root:
+- [ ] Use the --ls_lists flag to decide which checklists you would like to include in your project
+- [ ] Run the run_checklib script with those checklists as arguments. For example to add the `conda-environment.md` and `set-up-repository.md` checklists you would run:
+   ```
+   bash ./run_checklib.sh conda-environment.md set-up-repository.md
+   ```
+ - [ ] When prompted to by the script, supply the path to your project's repository.
+
+### Use them on GitHub
 
 Use the command line tool to add checklists as issue templates as described above. The push your repo to GitHub.
 
 Now when users go to create a new issue through the GitHub interface, they'll be presented with a list of templates from which to choose.  Once they've selected one, the new issue page pops up with the description populated with your brand new checklist.
 
-### GitLab
+### Use them on GitLab
 
 Under construction.
 
