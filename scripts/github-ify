@@ -1,0 +1,33 @@
+#!/bin/bash
+
+###############################################################################
+#
+#  This script will take one of our checklists as input, prepend it with a
+#  header required for it to work as a GitHub issue template, and then output
+#  the result.
+#
+###############################################################################
+
+if [[ $# -ne 1 ]]; then
+  echo "Usage:  github-ify filename, where filename is a path to one of our checklists."
+  exit 1
+fi
+
+filename="$1"
+contents=$(<${filename})
+title="$(awk 'NR == 1 {print}' ${filename})"
+title="${title:2}"
+description="$(awk 'NR == 2 {print}' ${filename})"
+if [[ "${description}" == "" ]]; then
+  description="''"
+fi
+header="---
+name: ${title}
+about: ${description}
+title: ${title}
+lables: ''
+assignees: ''
+
+---
+"
+echo "${header}${contents}"
