@@ -82,7 +82,7 @@ then
     exit 0
 else
     # Copy all the specified checklists to the project repository
-    if [[ "${github}" == "false" && "${gitlab}" == "false"]]; then
+    if [[ "${github}" == "false" && "${gitlab}" == "false" ]]; then
         echo "You must specify either --github or --gitlab."
         exit 1
     fi
