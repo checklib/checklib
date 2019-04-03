@@ -27,3 +27,7 @@
 
 - [ ] Write a suite of tests made up of a number of different kinds of tests.
 - [ ] Engage in good practice for writing and running tests.
+
+## Reproducible computational environments
+
+- [ ] Make your computational environment reproducible
