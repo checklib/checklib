@@ -14,58 +14,24 @@ Have you ever found yourself wondering, "Gosh, I know I'm supposed to be doing [
    ```bash
    git clone https://github.com/annakrystalli/checklib
    ```
-
-Once you have access to them, how you use them depends on what git hosting service you're using.
-
-> **Note:**  The following instructions are meant to give you an idea of how things might work.  This implementation will likely change.
+- You will also need a local copy of the project you wish to add checklists to. If you do not have one clone one.
+- [ ] Run the checklib tool by running `bash ./run_checklib`. If you don't supply any arguments (or supply the argument --help) the tool will output information explaining how to use the tool.
+- [ ] Get a list of the avaiable checklists divided by subject use the --ls_lists flag: `bash ./run_checklib --ls_lists`
+- [ ] To add checklists to your project:
+  - [ ] Go to the top level of your copy of this repository 
+  - [ ] Use the --ls_lists flag to decide which checklists you would like to include in your project
+  - [ ] Run the run_checklib script with those checklists as arguments. For example to add the conda-environment.md and sharing-material.md checklists you would run `bash ./run_checklib.sh conda-environment.md sharing-material.md`
+  - [ ] When prompted to by the script supply the path to your project's repository.
 
 ### GitHub
 
-- [ ] First you'll need to set your repository up with a directory to hold issue templates.
-   ```bash
-   cd <repository base directory>
-   git checkout <default branch name>
-   mkdir -p .github/ISSUE_TEMPLATE
-   ```
-   > **Note:**  These templates will need to exist in your repository's default branch, which is most likely, but not necessarily, `master`, in order for GitHub to utilize them when creating new issues.
-- [ ] Next you'll need to copy the checklists you like into that directory.
-   ```bash
-   cp <path to checklib>/library/github/<checklist of choice>.md \
-     <repository base directory>/.github/ISSUE_TEMPLATE/*
-   ```
-- [ ] Once you've copied all the checklists you want, you'll need to commit and push to your repository.
-   ```bash
-   cd <repository base directory>
-   git add .github/ISSUE_TEMPLATE/*
-   git commit # and fill out an appropriate commit message
-   git push # or create a pull request, etc.
-   ```
+Use the command line tool to add checklists as issue templates as described above. The push your repo to GitHub.
 
 Now when users go to create a new issue through the GitHub interface, they'll be presented with a list of templates from which to choose.  Once they've selected one, the new issue page pops up with the description populated with your brand new checklist.
 
 ### GitLab
 
-- [ ] First you'll need to set your repository up with a directory to hold issue templates.
-   ```bash
-   cd <repository base directory>
-   git checkout <default branch name>
-   mkdir -p .gitlab/issue_templates
-   ```
-   > **Note:**  These templates will need to exist in your repository's default branch, which is most likely, but not necessarily, `master`, in order for GitLab to utilize them when creating new issues.
-- [ ] Next you'll need to copy the checklists you like into that directory.
-   ```bash
-   cp <path to checklib>/library/gitlab/<checklist of choice>.md \
-     <repository base directory>/.gitlab/issue_templates/*
-   ```
-- [ ] Once you've copied all the checklists you want, you'll need to commit and push to your repository.
-   ```bash
-   cd <repository base directory>
-   git add .gitlab/issue_templates/*
-   git commit # and fill out an appropriate commit message
-   git push # or create a pull request, etc.
-   ```
-
-Now when users go to create a new issue through the GitLab interface, there will be a drop-down menu near the issue title from which they can select any of the templates you've added.  Once they've selected one, the issue description is populated with your brand new checklist.
+Under construction.
 
 ## Can I Customize Them to Suit My Needs?
 
