@@ -1,4 +1,4 @@
-# checklib
+# check✔️lib
 
 [![Build Status](https://travis-ci.org/annakrystalli/checklib.svg?branch=master)](https://travis-ci.org/annakrystalli/checklib)
 
