@@ -1,15 +1,50 @@
 #!/bin/sh
 
-# Provide help information if the command line tool is run either without an argument or with the --help argument 
-if [ $# -eq 0 ] || [ "$1" == "--help" ]
+usage()
+{
+    echo "This is the checklib tool. It should be run with the prefix bash"
+    echo "To install the desired checklists in your repo run this script with the names of the checklists you want to include as arguments."
+    echo "You must also specify whether you're using GitHub or GitLab as your hosting service with the --github or --gitlab flags."
+    echo "To list the available checklists do ./run_checklib --ls_lists"
+    echo "For example to add the conda-environment.md and sharing-material.md checklists you would run:"
+    echo "bash ./run_checklib.sh --github conda-environment.md sharing-material.md"
+}
+
+positional=()
+github=false
+gitlab=false
+while [[ $# -gt 0 ]]; do
+    key="$1"
+    case $key in
+        -h|--help)
+	    usage
+            exit 0 
+            ;;
+        --github)
+	    github=true
+            shift
+            ;;
+        --gitlab)
+	    gitlab=true
+            shift
+            ;;
+        *)
+            positional+=("$1")
+            shift
+            ;;
+    esac
+done
+set -- "${POSITIONAL[@]}"
+if [[ "${github}" == "false" && "${gitlab}" == "false" ]]; then
+    echo "You must specify either --github or --gitlab."
+    exit 1
+fi
+
+# Provide help information if the command line tool is run either without an argument
+if [ $# -eq 0 ]
 then
-    echo 'This is the checklib tool. It should be run with the prefix bash'
-    echo 'To install the desired checklists in your repo run this script with the names of the checklists you want to include as arguments.'
-    echo 'To list the available checklists do ./run_checklib --ls_lists'
-    echo 'For example to add the conda-environment.md and sharing-material.md checklists you would run:'
-    echo 'bash ./run_checklib.sh conda-environment.md sharing-material.md
-'
-    exit 0 
+    usage
+    exit 1
 elif [ "$1" == "--ls_lists" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
 then
     # Go into the library of checklists
@@ -51,11 +86,12 @@ else
 
     # If the repo doesn't already have a issue templates directory then make one
     # First get the path that would lead to the repos issue templates
-    suffix_a='/.github'
-    destination_path=$repo_path$suffix_a
-    mkdir -p $destination_path
-    suffix_b='/ISSUE_TEMPLATE/'
-    destination_path=$repo_path$suffix_a$suffix_b
+    if [[ "${github}" == "true" ]]; then
+        suffix='/.github/ISSUE_TEMPLATE/'
+    else
+        suffix='/.gitlab/issue_templates/'
+    fi
+    destination_path=$repo_path$suffix
     mkdir -p $destination_path
 
     # Go through all the checklists to copy
@@ -69,8 +105,14 @@ else
         cp $path_to_checklist $destination_path$checklist
 
 
-        # Supply the checklist to the githubification script which will make it github ready
-        ./scripts/github-ify $destination_path$checklist
+        # Supply the checklist to the github/lab-ification script which will make it GitHub/GitLab ready.
+	cd $destination_path
+	if [[ "${github}" == "true" ]]; then
+            ./scripts/github-ify $checklist
+        else
+            ./scripts/gitlab-ify $checklist
+        fi
+	cd -
 
     done 
 
