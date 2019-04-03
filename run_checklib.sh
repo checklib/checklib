@@ -46,7 +46,7 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 set -- "${POSITIONAL[@]}"
-if [[ "${github}" == "false" && "${gitlab}" == "false" ]]; then
+if [[ "${github}" == "false" && "${gitlab}" == "false" && "${ls_lists}" == "false"]]; then
     echo "You must specify either --github or --gitlab."
     exit 1
 fi
