@@ -16,7 +16,7 @@ filename="$1"
 contents=$(<${filename})
 title="$(awk 'NR == 1 {print}' ${filename})"
 title="${title:2}"
-description="$(awk 'NR == 2 {print}' ${filename})"
+description="$(awk 'NR == 3 {print}' ${filename})"
 if [[ "${description}" == "" ]]; then
   description="''"
 fi
