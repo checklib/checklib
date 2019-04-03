@@ -9,4 +9,12 @@ layout: default
 
   {{ content }}
 
+  {% for checklist in site.checklists %}
+    <h2>{{ checklist.title }}</h2>
+    <p>{{ checklist.description }}</p>
+<textarea>
+{{ checklist.raw_content }}
+</textarea>
+  {% endfor %}
+
 </div>

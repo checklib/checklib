@@ -1,6 +1,11 @@
 # Website
 
-The website is built using [jekyll](https://jekyllrb.com/)
+The website is built using [jekyll](https://jekyllrb.com/).
+
+To build and test locally:
+- [ ] Prerequisite: install Ruby - for Ubuntu, `sudo apt install ruby ruby-dev`
+- [ ] Install bundler and jekyll: `gem install bundler jekyll`
+- [ ] Run local server: `bundler exec jekyll serve`
 
 ## Theme
 

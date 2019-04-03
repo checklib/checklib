@@ -18,10 +18,10 @@ Advice on research data management is available in the Turing Way book: https://
 
 ### GDPR
 
-Does your dataset contain senstive personal data, if so then ensure you will be following GDPR guidelines.
+Does your dataset contain senstive personal data, if so then ensure you will be following General Data Protection Regulations (GDPR): https://www.ukdataservice.ac.uk/manage-data/legal-ethical/consent-data-sharing.aspx
 
 GDPR compliance:
-- [ ] This data is not sensitive, and GDPR is unneeded
+- [ ] This data is not sensitive, and special consideration is not needed.
 - [ ] GDPR guidelines have been followed
   - [ ] NOTE/UPLOAD: How are you complying with GDPR 
 

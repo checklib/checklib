@@ -2,14 +2,13 @@
 
 ###############################################################################
 #
-#  This script will take one of our checklists as input, prepend it with a
-#  header required for it to work as a GitHub issue template, and then output
-#  the result.
+#  This script will take a checklist as input and then prepend it with a header
+#  required for it to work as a GitHub issue template.
 #
 ###############################################################################
 
 if [[ $# -ne 1 ]]; then
-  echo "Usage:  github-ify filename, where filename is a path to one of our checklists."
+  echo "Usage:  github-ify filename, where filename is a path to a checklist."
   exit 1
 fi
 
@@ -30,4 +29,4 @@ assignees: ''
 
 ---
 "
-echo "${header}${contents}"
+echo "${header}${contents}" > ${filename}
