@@ -17,7 +17,7 @@ title: checklib
 description: >- # this means to ignore newlines until "baseurl:"
   checklib is a library of checklists to aid you in all your software sustainability and
   reproducibility needs!
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/checklib" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github:  annakrystalli/checklib
 
