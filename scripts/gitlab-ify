@@ -1,0 +1,40 @@
+#!/bin/bash
+
+###############################################################################
+#
+#  This script will take a checklist as input and then change the file name
+#  such that it's "pretty"; that is, spaces in place of hyphens, capitalized
+#  first characters in words, etc.
+#
+###############################################################################
+
+if [[ $# -ne 1 ]]; then
+  echo "Usage:  gitlab-ify filename, where filename is a path to a checklist."
+  exit 1
+fi
+
+filename="$1"
+old="${filename}"
+
+# Strip off the .md extension.
+filename="${filename::-3}"
+
+# Check to see if we're using a variant.
+variant=""
+if [[ "${filename}" == *"_"* ]]; then
+  IFS='_' read -ra temp <<< "${filename}"
+  filename="${temp[0]}"
+  variant="${temp[1]}"
+fi
+
+# Replace hyphens with spaces.
+filename="${filename//-/\\ }"
+
+# Capitalize words.
+parts=(${filename})
+new="${parts[@]^}"
+if [[ "${variant}" != "" ]]; then
+  new="${new}\\ -\\ ${variant^}"
+fi
+new="${new}.md"
+mv $old $new
