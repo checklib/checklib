@@ -46,7 +46,7 @@ while [[ $# -gt 0 ]]; do
 done
 set -- "${positional[@]}"
 
-repoRoot=$(pwd)
+repoRoot=${PWD}
 
 if [ "${ls_lists}" == "true" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
 then
