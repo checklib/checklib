@@ -10,6 +10,12 @@ usage()
     echo "bash ./run_checklib.sh --github conda-environment.md sharing-material.md"
 }
 
+
+if [[ $# -eq 0 ]]; then
+    usage
+    exit 1
+fi
+
 positional=()
 github=false
 gitlab=false
@@ -40,12 +46,7 @@ if [[ "${github}" == "false" && "${gitlab}" == "false" ]]; then
     exit 1
 fi
 
-# Provide help information if the command line tool is run either without an argument
-if [ $# -eq 0 ]
-then
-    usage
-    exit 1
-elif [ "$1" == "--ls_lists" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
+if [ "$1" == "--ls_lists" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
 then
     # Go into the library of checklists
     cd library
