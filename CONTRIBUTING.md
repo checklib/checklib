@@ -47,6 +47,23 @@ We'll happily consider any improvements you'd like to make to **checklib**.  The
    > **Note:**  Be sure you include the `+` symbol immediately preceding the branch name.
 - [ ] At this point, let us know the pull request is ready to go, and we'll go about merging it.  Again, thanks so much for your contributions.
 
+## Style Guide
+
+> **Note:**  This section will be further populated in the future.
+
+### Checklist Format
+
+Checklists are created using [GitHub-flavored Markdown](https://github.github.com/gfm/) syntax.  Specifically, they must have
+```
+# <Checklist Title>
+```
+
+as the first line of the file.  The first two characters must be `#` followed by a space.  The second line should have a short description of the checklist.  For the third line and beyond, the file can contain whatever valid Markdown you like.
+
+### Checklist Filenames
+
+Our file naming convention is to keep all text lowercase and to use hyphens in place of spaces (e.g., `authenticating-github.md`).  If, however, you are creating a variant of a general checklist, it's name should be the name of the original checklist, followed by an underscore, followed by the variant indicator (e.g., `authenticating-github_R.md`).
+
 ## Code of Conduct
 
 **checklib** uses the *Contributor Covenant Code of Conduct*.  See our [code of conduct page](CODE_OF_CONDUCT.md) for details.
