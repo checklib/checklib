@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 *.rproj
+library/**/*.html
+library/*.html
