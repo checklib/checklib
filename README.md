@@ -14,7 +14,8 @@ Have you ever found yourself wondering, "Gosh, I know I'm supposed to be doing [
    ```bash
    git clone https://github.com/annakrystalli/checklib
    ```
-- You will also need a local copy of the project you wish to add checklists to. If you do not have one clone one.
+   Make sure to pull before using, to ensure you have an up to date version of the checklists.
+- You will also need a local copy of the project you wish to add checklists to. If you do not have one, clone one.
 - [ ] Run the checklib tool by running `bash ./run_checklib`. If you don't supply any arguments (or supply the argument --help) the tool will output information explaining how to use the tool.
 - [ ] Get a list of the avaiable checklists divided by subject use the --ls_lists flag: `bash ./run_checklib --ls_lists`
 - [ ] To add checklists to your project:
