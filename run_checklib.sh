@@ -19,6 +19,7 @@ fi
 positional=()
 github=false
 gitlab=false
+ls_lists=false
 while [[ $# -gt 0 ]]; do
     key="$1"
     case $key in
@@ -34,6 +35,10 @@ while [[ $# -gt 0 ]]; do
 	    gitlab=true
             shift
             ;;
+	--ls_lists)
+	    ls_lists=true
+	    shift
+	    ;;
         *)
             positional+=("$1")
             shift
@@ -46,7 +51,7 @@ if [[ "${github}" == "false" && "${gitlab}" == "false" ]]; then
     exit 1
 fi
 
-if [ "$1" == "--ls_lists" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
+if [ "${ls_lists}" == "true" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
 then
     # Go into the library of checklists
     cd library
