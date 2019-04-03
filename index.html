@@ -79,9 +79,10 @@
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda env export &gt; environment.yml</code></li>
 </ul>
 
+
     </details>
     <div class="form-group">
-      <textarea  id="checklib-item-_checklists_zenodo" class="form-control">
+      <textarea  id="checklib-item-_checklists_publishing-materials_zenodo" class="form-control">
 # Conda Environments
 
 Building / recording Conda Environment setup, for ensuring reproducable environments.
@@ -97,7 +98,7 @@ Installing Conda / Anaconda on your system.
 - [ ] download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
   - [ ] python 2.X
   - [ ] python 3.X
-- [ ] install anaconda
+- [ ] install anaconda 
 - [ ] check conda is installed (and record version number) `conda --version`
 
 
@@ -119,17 +120,18 @@ The conda environment setup can be saved as a YAML file.
 
 - [ ] `conda env export > environment.yml`
 
+
+
+
       </textarea>
     </div>
 
     <button
-      class="btn btn-small btn-primary btn-copy-to-clipboard"
-      data-clipboard-target="#checklib-item-_checklists_zenodo">Copy as markdown</button>
-
-
+    class="btn btn-small btn-primary btn-copy-to-clipboard"
+    data-clipboard-target="#checklib-item-_checklists_publishing-materials_zenodo">Copy as markdown</button>
     <a class="btn btn-secondary"
-      download="checklib-zenodo.md"
-      href="data:text/plain;base64,IyBDb25kYSBFbnZpcm9ubWVudHMKCkJ1aWxkaW5nIC8gcmVjb3JkaW5nIENv
+    download="checklib-publishing-materials_zenodo.md"
+    href="data:text/plain;base64,IyBDb25kYSBFbnZpcm9ubWVudHMKCkJ1aWxkaW5nIC8gcmVjb3JkaW5nIENv
 bmRhIEVudmlyb25tZW50IHNldHVwLCBmb3IgZW5zdXJpbmcgcmVwcm9kdWNh
 YmxlIGVudmlyb25tZW50cy4KCkFkdmljZSBvbiByZXByb2R1Y2libGUgZW52
 aXJvbm1lbnRzIGlzIGF2YWlsYWJsZSBpbiB0aGUgVHVyaW5nIFdheSBib29r
@@ -142,20 +144,984 @@ ZCBpbnN0YWxsYXRpb24gc29mdHdhcmUgZnJvbSBodHRwczovL3d3dy5hbmFj
 b25kYS5jb20vZGlzdHJpYnV0aW9uLywgYW5kIG5vdGUgYmVsb3cgd2hpY2gg
 dmVyc2lvbiB5b3UgYXJlIHVzaW5nIChweXRob24gMy5YIGlzIG5vdyByZWNv
 bW1lbmRlZCkKICAtIFsgXSBweXRob24gMi5YCiAgLSBbIF0gcHl0aG9uIDMu
-WAotIFsgXSBpbnN0YWxsIGFuYWNvbmRhCi0gWyBdIGNoZWNrIGNvbmRhIGlz
-IGluc3RhbGxlZCAoYW5kIHJlY29yZCB2ZXJzaW9uIG51bWJlcikgYGNvbmRh
-IC0tdmVyc2lvbmAKCgojIyMgVXNhZ2UKCkNyZWF0aW5nIGEgY29uZGEgZW52
-aXJvbm1lbnQsIGFuZCBhY2Nlc3NpbmcgaXQuCi0gWyBdIGBjb25kYSBjcmVh
-dGUgLS1uYW1lIFtwcm9qZWN0X25hbWVdIFtvcHRpb25hbF9wYWNrYWdlX2xp
-c3RdYAotIFsgXSBgY29uZGEgYWN0aXZhdGUgW3Byb2plY3RfbmFtZV1gCgpB
-ZGRpbmcgbmV3IHBhY2thZ2VzIHRvIHlvdXIgZW52aXJvbm1lbnQKCi0gWyBd
-IGBjb25kYSBpbnN0YWxsIC1jIFtjaGFubmVsX25hbWVdIFtwYWNrYWdlX25h
-bWVdYAoKCgojIyMgRW52aXJvbm1lbnQgUmVjb3JkaW5nCgpUaGUgY29uZGEg
-ZW52aXJvbm1lbnQgc2V0dXAgY2FuIGJlIHNhdmVkIGFzIGEgWUFNTCBmaWxl
-LgoKLSBbIF0gYGNvbmRhIGVudiBleHBvcnQgPiBlbnZpcm9ubWVudC55bWxg
-Cg==
+WAotIFsgXSBpbnN0YWxsIGFuYWNvbmRhIAotIFsgXSBjaGVjayBjb25kYSBp
+cyBpbnN0YWxsZWQgKGFuZCByZWNvcmQgdmVyc2lvbiBudW1iZXIpIGBjb25k
+YSAtLXZlcnNpb25gCgoKIyMjIFVzYWdlCgpDcmVhdGluZyBhIGNvbmRhIGVu
+dmlyb25tZW50LCBhbmQgYWNjZXNzaW5nIGl0LgotIFsgXSBgY29uZGEgY3Jl
+YXRlIC0tbmFtZSBbcHJvamVjdF9uYW1lXSBbb3B0aW9uYWxfcGFja2FnZV9s
+aXN0XWAKLSBbIF0gYGNvbmRhIGFjdGl2YXRlIFtwcm9qZWN0X25hbWVdYAoK
+QWRkaW5nIG5ldyBwYWNrYWdlcyB0byB5b3VyIGVudmlyb25tZW50CgotIFsg
+XSBgY29uZGEgaW5zdGFsbCAtYyBbY2hhbm5lbF9uYW1lXSBbcGFja2FnZV9u
+YW1lXWAKCgoKIyMjIEVudmlyb25tZW50IFJlY29yZGluZwoKVGhlIGNvbmRh
+IGVudmlyb25tZW50IHNldHVwIGNhbiBiZSBzYXZlZCBhcyBhIFlBTUwgZmls
+ZS4KCi0gWyBdIGBjb25kYSBlbnYgZXhwb3J0ID4gZW52aXJvbm1lbnQueW1s
+YAoKCgo=
 ">Download</a>
-  </article>
+    <div>
+      <small>Copy into a new issue, or download and save into a repository's <code>.github/ISSUE_TEMPLATE/</code> folder</small>
+    </div>
+    </article>
+  
+  <article class="checklib-item">
+    <h2 class="checklib-item-title">Conda Environments</h2>
+    <p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+    <details>
+      <summary>Show full checklist</summary>
+      <h1 id="conda-environments">Conda Environments</h1>
+
+<p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+
+<p>Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="#prerequiste-knowledge">prerequiste knowledge</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="#setup-conda">setup conda</a></li>
+</ul>
+
+<h3 id="prerequiste-knowledge">Prerequiste knowledge</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />command line basic knowledge</li>
+</ul>
+
+<h3 id="setup-conda">Setup Conda</h3>
+
+<p>Installing Conda / Anaconda on your system.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 2.X</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 3.X</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />install anaconda</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />check conda is installed (and record version number) <code class="highlighter-rouge">conda --version</code>
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE version:</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="create-environment--install-packages">Create Environment / Install Packages</h3>
+
+<p>Creating a conda environment, and installing/updating packages.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda create --name [environ_name] [optional_package_list]</code>
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE environ_name:</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE package_list:</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda activate [environ_name]</code></li>
+</ul>
+
+<p>Adding new packages to your environment (specifying the channel <code class="highlighter-rouge">-c [channel_name]</code> is optional.)</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda install -c [channel_name] [package_name]</code>
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE package and version:</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE package and version:</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="environment-recording">Environment Recording</h3>
+
+<p>The conda environment setup can be saved as a YAML file. This is useful to do at regular intervals, as packages versions can be updated (and installing new packages can cause supporting packages to be changed to a different version too).</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda env export &gt; environment_[channel_name]_[date].yml</code>
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />UPLOAD environment_[channel_name]_[date].yml</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="updating-conda--packages">Updating Conda / Packages</h3>
+
+<p>Not advised for reproducable environments, but if you must then before updating conda, or the environment, you should note the current (working?) setup first.</p>
+
+    </details>
+    <div class="form-group">
+      <textarea  id="checklib-item-_checklists_reproducible-computational-environments_conda-environment" class="form-control">
+# Conda Environments
+
+Building / recording Conda Environment setup, for ensuring reproducable environments.
+
+Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html
+
+- [ ] [prerequiste knowledge](#prerequiste-knowledge)
+- [ ] [setup conda](#setup-conda)
+
+
+
+### Prerequiste knowledge
+- [ ] command line basic knowledge
+
+### Setup Conda
+
+Installing Conda / Anaconda on your system.
+- [ ] download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+  - [ ] python 2.X
+  - [ ] python 3.X
+- [ ] install anaconda 
+- [ ] check conda is installed (and record version number) `conda --version`
+  - [ ] NOTE version: 
+
+
+### Create Environment / Install Packages
+
+Creating a conda environment, and installing/updating packages.
+- [ ] `conda create --name [environ_name] [optional_package_list]`
+  - [ ] NOTE environ_name:
+  - [ ] NOTE package_list:
+- [ ] `conda activate [environ_name]`
+
+Adding new packages to your environment (specifying the channel `-c [channel_name]` is optional.)
+
+- [ ] `conda install -c [channel_name] [package_name]`
+  - [ ] NOTE package and version:
+  - [ ] NOTE package and version:
+
+
+
+### Environment Recording
+
+The conda environment setup can be saved as a YAML file. This is useful to do at regular intervals, as packages versions can be updated (and installing new packages can cause supporting packages to be changed to a different version too).
+
+- [ ] `conda env export > environment_[channel_name]_[date].yml`
+  - [ ] UPLOAD environment_[channel_name]\_[date].yml
+
+
+
+### Updating Conda / Packages
+
+Not advised for reproducable environments, but if you must then before updating conda, or the environment, you should note the current (working?) setup first.
+
+      </textarea>
+    </div>
+
+    <button
+    class="btn btn-small btn-primary btn-copy-to-clipboard"
+    data-clipboard-target="#checklib-item-_checklists_reproducible-computational-environments_conda-environment">Copy as markdown</button>
+    <a class="btn btn-secondary"
+    download="checklib-reproducible-computational-environments_conda-environment.md"
+    href="data:text/plain;base64,IyBDb25kYSBFbnZpcm9ubWVudHMKCkJ1aWxkaW5nIC8gcmVjb3JkaW5nIENv
+bmRhIEVudmlyb25tZW50IHNldHVwLCBmb3IgZW5zdXJpbmcgcmVwcm9kdWNh
+YmxlIGVudmlyb25tZW50cy4KCkFkdmljZSBvbiByZXByb2R1Y2libGUgZW52
+aXJvbm1lbnRzIGlzIGF2YWlsYWJsZSBpbiB0aGUgVHVyaW5nIFdheSBib29r
+OiBodHRwczovL3RoZS10dXJpbmctd2F5Lm5ldGxpZnkuY29tL3JlcHJvZHVj
+aWJsZV9lbnZpcm9ubWVudHMvcmVwcm9kdWNpYmxlX2Vudmlyb25tZW50cy5o
+dG1sCgotIFsgXSBbcHJlcmVxdWlzdGUga25vd2xlZGdlXSgjcHJlcmVxdWlz
+dGUta25vd2xlZGdlKQotIFsgXSBbc2V0dXAgY29uZGFdKCNzZXR1cC1jb25k
+YSkKCgoKIyMjIFByZXJlcXVpc3RlIGtub3dsZWRnZQotIFsgXSBjb21tYW5k
+IGxpbmUgYmFzaWMga25vd2xlZGdlCgojIyMgU2V0dXAgQ29uZGEKCkluc3Rh
+bGxpbmcgQ29uZGEgLyBBbmFjb25kYSBvbiB5b3VyIHN5c3RlbS4KLSBbIF0g
+ZG93bmxvYWQgaW5zdGFsbGF0aW9uIHNvZnR3YXJlIGZyb20gaHR0cHM6Ly93
+d3cuYW5hY29uZGEuY29tL2Rpc3RyaWJ1dGlvbi8sIGFuZCBub3RlIGJlbG93
+IHdoaWNoIHZlcnNpb24geW91IGFyZSB1c2luZyAocHl0aG9uIDMuWCBpcyBu
+b3cgcmVjb21tZW5kZWQpCiAgLSBbIF0gcHl0aG9uIDIuWAogIC0gWyBdIHB5
+dGhvbiAzLlgKLSBbIF0gaW5zdGFsbCBhbmFjb25kYSAKLSBbIF0gY2hlY2sg
+Y29uZGEgaXMgaW5zdGFsbGVkIChhbmQgcmVjb3JkIHZlcnNpb24gbnVtYmVy
+KSBgY29uZGEgLS12ZXJzaW9uYAogIC0gWyBdIE5PVEUgdmVyc2lvbjogCgoK
+IyMjIENyZWF0ZSBFbnZpcm9ubWVudCAvIEluc3RhbGwgUGFja2FnZXMKCkNy
+ZWF0aW5nIGEgY29uZGEgZW52aXJvbm1lbnQsIGFuZCBpbnN0YWxsaW5nL3Vw
+ZGF0aW5nIHBhY2thZ2VzLgotIFsgXSBgY29uZGEgY3JlYXRlIC0tbmFtZSBb
+ZW52aXJvbl9uYW1lXSBbb3B0aW9uYWxfcGFja2FnZV9saXN0XWAKICAtIFsg
+XSBOT1RFIGVudmlyb25fbmFtZToKICAtIFsgXSBOT1RFIHBhY2thZ2VfbGlz
+dDoKLSBbIF0gYGNvbmRhIGFjdGl2YXRlIFtlbnZpcm9uX25hbWVdYAoKQWRk
+aW5nIG5ldyBwYWNrYWdlcyB0byB5b3VyIGVudmlyb25tZW50IChzcGVjaWZ5
+aW5nIHRoZSBjaGFubmVsIGAtYyBbY2hhbm5lbF9uYW1lXWAgaXMgb3B0aW9u
+YWwuKQoKLSBbIF0gYGNvbmRhIGluc3RhbGwgLWMgW2NoYW5uZWxfbmFtZV0g
+W3BhY2thZ2VfbmFtZV1gCiAgLSBbIF0gTk9URSBwYWNrYWdlIGFuZCB2ZXJz
+aW9uOgogIC0gWyBdIE5PVEUgcGFja2FnZSBhbmQgdmVyc2lvbjoKCgoKIyMj
+IEVudmlyb25tZW50IFJlY29yZGluZwoKVGhlIGNvbmRhIGVudmlyb25tZW50
+IHNldHVwIGNhbiBiZSBzYXZlZCBhcyBhIFlBTUwgZmlsZS4gVGhpcyBpcyB1
+c2VmdWwgdG8gZG8gYXQgcmVndWxhciBpbnRlcnZhbHMsIGFzIHBhY2thZ2Vz
+IHZlcnNpb25zIGNhbiBiZSB1cGRhdGVkIChhbmQgaW5zdGFsbGluZyBuZXcg
+cGFja2FnZXMgY2FuIGNhdXNlIHN1cHBvcnRpbmcgcGFja2FnZXMgdG8gYmUg
+Y2hhbmdlZCB0byBhIGRpZmZlcmVudCB2ZXJzaW9uIHRvbykuCgotIFsgXSBg
+Y29uZGEgZW52IGV4cG9ydCA+IGVudmlyb25tZW50X1tjaGFubmVsX25hbWVd
+X1tkYXRlXS55bWxgCiAgLSBbIF0gVVBMT0FEIGVudmlyb25tZW50X1tjaGFu
+bmVsX25hbWVdXF9bZGF0ZV0ueW1sCgoKCiMjIyBVcGRhdGluZyBDb25kYSAv
+IFBhY2thZ2VzCgpOb3QgYWR2aXNlZCBmb3IgcmVwcm9kdWNhYmxlIGVudmly
+b25tZW50cywgYnV0IGlmIHlvdSBtdXN0IHRoZW4gYmVmb3JlIHVwZGF0aW5n
+IGNvbmRhLCBvciB0aGUgZW52aXJvbm1lbnQsIHlvdSBzaG91bGQgbm90ZSB0
+aGUgY3VycmVudCAod29ya2luZz8pIHNldHVwIGZpcnN0Lgo=
+">Download</a>
+    <div>
+      <small>Copy into a new issue, or download and save into a repository's <code>.github/ISSUE_TEMPLATE/</code> folder</small>
+    </div>
+    </article>
+  
+  <article class="checklib-item">
+    <h2 class="checklib-item-title">Conda Environments</h2>
+    <p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+    <details>
+      <summary>Show full checklist</summary>
+      <h1 id="conda-environments">Conda Environments</h1>
+
+<p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+
+<p>Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html</p>
+
+<h3 id="prerequiste-knowledge">Prerequiste knowledge</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />command line basic knowledge</li>
+</ul>
+
+<h3 id="setup">Setup</h3>
+
+<p>Installing Conda / Anaconda on your system.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 2.X</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 3.X</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />install anaconda</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />check conda is installed (and record version number) <code class="highlighter-rouge">conda --version</code></li>
+</ul>
+
+<h3 id="usage">Usage</h3>
+
+<p>Creating a conda environment, and accessing it.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda create --name [project_name] [optional_package_list]</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda activate [project_name]</code></li>
+</ul>
+
+<p>Adding new packages to your environment</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda install -c [channel_name] [package_name]</code></li>
+</ul>
+
+<h3 id="environment-recording">Environment Recording</h3>
+
+<p>The conda environment setup can be saved as a YAML file.</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda env export &gt; environment.yml</code></li>
+</ul>
+
+
+    </details>
+    <div class="form-group">
+      <textarea  id="checklib-item-_checklists_reproducible-computational-environments_hpc-module-environment" class="form-control">
+# Conda Environments
+
+Building / recording Conda Environment setup, for ensuring reproducable environments.
+
+Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html
+
+### Prerequiste knowledge
+- [ ] command line basic knowledge
+
+### Setup
+
+Installing Conda / Anaconda on your system.
+- [ ] download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+  - [ ] python 2.X
+  - [ ] python 3.X
+- [ ] install anaconda 
+- [ ] check conda is installed (and record version number) `conda --version`
+
+
+### Usage
+
+Creating a conda environment, and accessing it.
+- [ ] `conda create --name [project_name] [optional_package_list]`
+- [ ] `conda activate [project_name]`
+
+Adding new packages to your environment
+
+- [ ] `conda install -c [channel_name] [package_name]`
+
+
+
+### Environment Recording
+
+The conda environment setup can be saved as a YAML file.
+
+- [ ] `conda env export > environment.yml`
+
+
+
+
+      </textarea>
+    </div>
+
+    <button
+    class="btn btn-small btn-primary btn-copy-to-clipboard"
+    data-clipboard-target="#checklib-item-_checklists_reproducible-computational-environments_hpc-module-environment">Copy as markdown</button>
+    <a class="btn btn-secondary"
+    download="checklib-reproducible-computational-environments_hpc-module-environment.md"
+    href="data:text/plain;base64,IyBDb25kYSBFbnZpcm9ubWVudHMKCkJ1aWxkaW5nIC8gcmVjb3JkaW5nIENv
+bmRhIEVudmlyb25tZW50IHNldHVwLCBmb3IgZW5zdXJpbmcgcmVwcm9kdWNh
+YmxlIGVudmlyb25tZW50cy4KCkFkdmljZSBvbiByZXByb2R1Y2libGUgZW52
+aXJvbm1lbnRzIGlzIGF2YWlsYWJsZSBpbiB0aGUgVHVyaW5nIFdheSBib29r
+OiBodHRwczovL3RoZS10dXJpbmctd2F5Lm5ldGxpZnkuY29tL3JlcHJvZHVj
+aWJsZV9lbnZpcm9ubWVudHMvcmVwcm9kdWNpYmxlX2Vudmlyb25tZW50cy5o
+dG1sCgojIyMgUHJlcmVxdWlzdGUga25vd2xlZGdlCi0gWyBdIGNvbW1hbmQg
+bGluZSBiYXNpYyBrbm93bGVkZ2UKCiMjIyBTZXR1cAoKSW5zdGFsbGluZyBD
+b25kYSAvIEFuYWNvbmRhIG9uIHlvdXIgc3lzdGVtLgotIFsgXSBkb3dubG9h
+ZCBpbnN0YWxsYXRpb24gc29mdHdhcmUgZnJvbSBodHRwczovL3d3dy5hbmFj
+b25kYS5jb20vZGlzdHJpYnV0aW9uLywgYW5kIG5vdGUgYmVsb3cgd2hpY2gg
+dmVyc2lvbiB5b3UgYXJlIHVzaW5nIChweXRob24gMy5YIGlzIG5vdyByZWNv
+bW1lbmRlZCkKICAtIFsgXSBweXRob24gMi5YCiAgLSBbIF0gcHl0aG9uIDMu
+WAotIFsgXSBpbnN0YWxsIGFuYWNvbmRhIAotIFsgXSBjaGVjayBjb25kYSBp
+cyBpbnN0YWxsZWQgKGFuZCByZWNvcmQgdmVyc2lvbiBudW1iZXIpIGBjb25k
+YSAtLXZlcnNpb25gCgoKIyMjIFVzYWdlCgpDcmVhdGluZyBhIGNvbmRhIGVu
+dmlyb25tZW50LCBhbmQgYWNjZXNzaW5nIGl0LgotIFsgXSBgY29uZGEgY3Jl
+YXRlIC0tbmFtZSBbcHJvamVjdF9uYW1lXSBbb3B0aW9uYWxfcGFja2FnZV9s
+aXN0XWAKLSBbIF0gYGNvbmRhIGFjdGl2YXRlIFtwcm9qZWN0X25hbWVdYAoK
+QWRkaW5nIG5ldyBwYWNrYWdlcyB0byB5b3VyIGVudmlyb25tZW50CgotIFsg
+XSBgY29uZGEgaW5zdGFsbCAtYyBbY2hhbm5lbF9uYW1lXSBbcGFja2FnZV9u
+YW1lXWAKCgoKIyMjIEVudmlyb25tZW50IFJlY29yZGluZwoKVGhlIGNvbmRh
+IGVudmlyb25tZW50IHNldHVwIGNhbiBiZSBzYXZlZCBhcyBhIFlBTUwgZmls
+ZS4KCi0gWyBdIGBjb25kYSBlbnYgZXhwb3J0ID4gZW52aXJvbm1lbnQueW1s
+YAoKCgo=
+">Download</a>
+    <div>
+      <small>Copy into a new issue, or download and save into a repository's <code>.github/ISSUE_TEMPLATE/</code> folder</small>
+    </div>
+    </article>
+  
+  <article class="checklib-item">
+    <h2 class="checklib-item-title">Data Management</h2>
+    <p>Managing research data.</p>
+    <details>
+      <summary>Show full checklist</summary>
+      <h1 id="data-management">Data Management</h1>
+
+<p>Managing research data.</p>
+
+<p>Advice on research data management is available in the Turing Way book: https://the-turing-way.netlify.com/rdm/rdm.html</p>
+
+<h3 id="prerequiste-knowledge">Prerequiste knowledge</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />things?</li>
+</ul>
+
+<h3 id="raw-data-safety">Raw Data Safety</h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Back up raw data to a safe location
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE: location of raw data</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE: format of raw data</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE: raw data ID (md5 hash sum, or similar)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="gdpr">GDPR</h3>
+
+<p>Does your dataset contain senstive personal data, if so then ensure you will be following General Data Protection Regulations (GDPR): https://www.ukdataservice.ac.uk/manage-data/legal-ethical/consent-data-sharing.aspx</p>
+
+<p>GDPR compliance:</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />This data is not sensitive, and special consideration is not needed.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />GDPR guidelines have been followed
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE/UPLOAD: How are you complying with GDPR</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="documentation-plan">Documentation Plan</h3>
+
+<p>Decide on how you will document your data processing.</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE: documentation tool (googledocs/evernote/etc)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE: lab book / document space name</li>
+</ul>
+
+<h3 id="tool-sources">Tool Sources</h3>
+
+<p>What tools &amp; formats will you use for data processing:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE: data format to use</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />NOTE: language / toolkit</li>
+</ul>
+
+
+    </details>
+    <div class="form-group">
+      <textarea  id="checklib-item-_checklists_research-data-management_data-management" class="form-control">
+# Data Management
+
+Managing research data.
+
+Advice on research data management is available in the Turing Way book: https://the-turing-way.netlify.com/rdm/rdm.html
+
+### Prerequiste knowledge
+- [ ] things?
+
+### Raw Data Safety
+
+- [ ] Back up raw data to a safe location
+  - [ ] NOTE: location of raw data
+  - [ ] NOTE: format of raw data
+  - [ ] NOTE: raw data ID (md5 hash sum, or similar)
+
+
+
+### GDPR
+
+Does your dataset contain senstive personal data, if so then ensure you will be following General Data Protection Regulations (GDPR): https://www.ukdataservice.ac.uk/manage-data/legal-ethical/consent-data-sharing.aspx
+
+GDPR compliance:
+- [ ] This data is not sensitive, and special consideration is not needed.
+- [ ] GDPR guidelines have been followed
+  - [ ] NOTE/UPLOAD: How are you complying with GDPR 
+
+  
+
+
+
+### Documentation Plan
+
+Decide on how you will document your data processing.
+
+- [ ] NOTE: documentation tool (googledocs/evernote/etc)
+- [ ] NOTE: lab book / document space name 
+
+
+
+### Tool Sources
+
+What tools & formats will you use for data processing:
+
+- [ ] NOTE: data format to use
+- [ ] NOTE: language / toolkit
+
+
+      </textarea>
+    </div>
+
+    <button
+    class="btn btn-small btn-primary btn-copy-to-clipboard"
+    data-clipboard-target="#checklib-item-_checklists_research-data-management_data-management">Copy as markdown</button>
+    <a class="btn btn-secondary"
+    download="checklib-research-data-management_data-management.md"
+    href="data:text/plain;base64,IyBEYXRhIE1hbmFnZW1lbnQKCk1hbmFnaW5nIHJlc2VhcmNoIGRhdGEuCgpB
+ZHZpY2Ugb24gcmVzZWFyY2ggZGF0YSBtYW5hZ2VtZW50IGlzIGF2YWlsYWJs
+ZSBpbiB0aGUgVHVyaW5nIFdheSBib29rOiBodHRwczovL3RoZS10dXJpbmct
+d2F5Lm5ldGxpZnkuY29tL3JkbS9yZG0uaHRtbAoKIyMjIFByZXJlcXVpc3Rl
+IGtub3dsZWRnZQotIFsgXSB0aGluZ3M/CgojIyMgUmF3IERhdGEgU2FmZXR5
+CgotIFsgXSBCYWNrIHVwIHJhdyBkYXRhIHRvIGEgc2FmZSBsb2NhdGlvbgog
+IC0gWyBdIE5PVEU6IGxvY2F0aW9uIG9mIHJhdyBkYXRhCiAgLSBbIF0gTk9U
+RTogZm9ybWF0IG9mIHJhdyBkYXRhCiAgLSBbIF0gTk9URTogcmF3IGRhdGEg
+SUQgKG1kNSBoYXNoIHN1bSwgb3Igc2ltaWxhcikKCgoKIyMjIEdEUFIKCkRv
+ZXMgeW91ciBkYXRhc2V0IGNvbnRhaW4gc2Vuc3RpdmUgcGVyc29uYWwgZGF0
+YSwgaWYgc28gdGhlbiBlbnN1cmUgeW91IHdpbGwgYmUgZm9sbG93aW5nIEdl
+bmVyYWwgRGF0YSBQcm90ZWN0aW9uIFJlZ3VsYXRpb25zIChHRFBSKTogaHR0
+cHM6Ly93d3cudWtkYXRhc2VydmljZS5hYy51ay9tYW5hZ2UtZGF0YS9sZWdh
+bC1ldGhpY2FsL2NvbnNlbnQtZGF0YS1zaGFyaW5nLmFzcHgKCkdEUFIgY29t
+cGxpYW5jZToKLSBbIF0gVGhpcyBkYXRhIGlzIG5vdCBzZW5zaXRpdmUsIGFu
+ZCBzcGVjaWFsIGNvbnNpZGVyYXRpb24gaXMgbm90IG5lZWRlZC4KLSBbIF0g
+R0RQUiBndWlkZWxpbmVzIGhhdmUgYmVlbiBmb2xsb3dlZAogIC0gWyBdIE5P
+VEUvVVBMT0FEOiBIb3cgYXJlIHlvdSBjb21wbHlpbmcgd2l0aCBHRFBSIAoK
+ICAKCgoKIyMjIERvY3VtZW50YXRpb24gUGxhbgoKRGVjaWRlIG9uIGhvdyB5
+b3Ugd2lsbCBkb2N1bWVudCB5b3VyIGRhdGEgcHJvY2Vzc2luZy4KCi0gWyBd
+IE5PVEU6IGRvY3VtZW50YXRpb24gdG9vbCAoZ29vZ2xlZG9jcy9ldmVybm90
+ZS9ldGMpCi0gWyBdIE5PVEU6IGxhYiBib29rIC8gZG9jdW1lbnQgc3BhY2Ug
+bmFtZSAKCgoKIyMjIFRvb2wgU291cmNlcwoKV2hhdCB0b29scyAmIGZvcm1h
+dHMgd2lsbCB5b3UgdXNlIGZvciBkYXRhIHByb2Nlc3Npbmc6CgotIFsgXSBO
+T1RFOiBkYXRhIGZvcm1hdCB0byB1c2UKLSBbIF0gTk9URTogbGFuZ3VhZ2Ug
+LyB0b29sa2l0Cgo=
+">Download</a>
+    <div>
+      <small>Copy into a new issue, or download and save into a repository's <code>.github/ISSUE_TEMPLATE/</code> folder</small>
+    </div>
+    </article>
+  
+  <article class="checklib-item">
+    <h2 class="checklib-item-title">Conda Environments</h2>
+    <p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+    <details>
+      <summary>Show full checklist</summary>
+      <h1 id="conda-environments">Conda Environments</h1>
+
+<p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+
+<p>Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html</p>
+
+<h3 id="prerequiste-knowledge">Prerequiste knowledge</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />command line basic knowledge</li>
+</ul>
+
+<h3 id="setup">Setup</h3>
+
+<p>Installing Conda / Anaconda on your system.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 2.X</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 3.X</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />install anaconda</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />check conda is installed (and record version number) <code class="highlighter-rouge">conda --version</code></li>
+</ul>
+
+<h3 id="usage">Usage</h3>
+
+<p>Creating a conda environment, and accessing it.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda create --name [project_name] [optional_package_list]</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda activate [project_name]</code></li>
+</ul>
+
+<p>Adding new packages to your environment</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda install -c [channel_name] [package_name]</code></li>
+</ul>
+
+<h3 id="environment-recording">Environment Recording</h3>
+
+<p>The conda environment setup can be saved as a YAML file.</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda env export &gt; environment.yml</code></li>
+</ul>
+
+
+    </details>
+    <div class="form-group">
+      <textarea  id="checklib-item-_checklists_sharing-materials_sharing-material" class="form-control">
+# Conda Environments
+
+Building / recording Conda Environment setup, for ensuring reproducable environments.
+
+Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html
+
+### Prerequiste knowledge
+- [ ] command line basic knowledge
+
+### Setup
+
+Installing Conda / Anaconda on your system.
+- [ ] download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+  - [ ] python 2.X
+  - [ ] python 3.X
+- [ ] install anaconda 
+- [ ] check conda is installed (and record version number) `conda --version`
+
+
+### Usage
+
+Creating a conda environment, and accessing it.
+- [ ] `conda create --name [project_name] [optional_package_list]`
+- [ ] `conda activate [project_name]`
+
+Adding new packages to your environment
+
+- [ ] `conda install -c [channel_name] [package_name]`
+
+
+
+### Environment Recording
+
+The conda environment setup can be saved as a YAML file.
+
+- [ ] `conda env export > environment.yml`
+
+
+
+
+      </textarea>
+    </div>
+
+    <button
+    class="btn btn-small btn-primary btn-copy-to-clipboard"
+    data-clipboard-target="#checklib-item-_checklists_sharing-materials_sharing-material">Copy as markdown</button>
+    <a class="btn btn-secondary"
+    download="checklib-sharing-materials_sharing-material.md"
+    href="data:text/plain;base64,IyBDb25kYSBFbnZpcm9ubWVudHMKCkJ1aWxkaW5nIC8gcmVjb3JkaW5nIENv
+bmRhIEVudmlyb25tZW50IHNldHVwLCBmb3IgZW5zdXJpbmcgcmVwcm9kdWNh
+YmxlIGVudmlyb25tZW50cy4KCkFkdmljZSBvbiByZXByb2R1Y2libGUgZW52
+aXJvbm1lbnRzIGlzIGF2YWlsYWJsZSBpbiB0aGUgVHVyaW5nIFdheSBib29r
+OiBodHRwczovL3RoZS10dXJpbmctd2F5Lm5ldGxpZnkuY29tL3JlcHJvZHVj
+aWJsZV9lbnZpcm9ubWVudHMvcmVwcm9kdWNpYmxlX2Vudmlyb25tZW50cy5o
+dG1sCgojIyMgUHJlcmVxdWlzdGUga25vd2xlZGdlCi0gWyBdIGNvbW1hbmQg
+bGluZSBiYXNpYyBrbm93bGVkZ2UKCiMjIyBTZXR1cAoKSW5zdGFsbGluZyBD
+b25kYSAvIEFuYWNvbmRhIG9uIHlvdXIgc3lzdGVtLgotIFsgXSBkb3dubG9h
+ZCBpbnN0YWxsYXRpb24gc29mdHdhcmUgZnJvbSBodHRwczovL3d3dy5hbmFj
+b25kYS5jb20vZGlzdHJpYnV0aW9uLywgYW5kIG5vdGUgYmVsb3cgd2hpY2gg
+dmVyc2lvbiB5b3UgYXJlIHVzaW5nIChweXRob24gMy5YIGlzIG5vdyByZWNv
+bW1lbmRlZCkKICAtIFsgXSBweXRob24gMi5YCiAgLSBbIF0gcHl0aG9uIDMu
+WAotIFsgXSBpbnN0YWxsIGFuYWNvbmRhIAotIFsgXSBjaGVjayBjb25kYSBp
+cyBpbnN0YWxsZWQgKGFuZCByZWNvcmQgdmVyc2lvbiBudW1iZXIpIGBjb25k
+YSAtLXZlcnNpb25gCgoKIyMjIFVzYWdlCgpDcmVhdGluZyBhIGNvbmRhIGVu
+dmlyb25tZW50LCBhbmQgYWNjZXNzaW5nIGl0LgotIFsgXSBgY29uZGEgY3Jl
+YXRlIC0tbmFtZSBbcHJvamVjdF9uYW1lXSBbb3B0aW9uYWxfcGFja2FnZV9s
+aXN0XWAKLSBbIF0gYGNvbmRhIGFjdGl2YXRlIFtwcm9qZWN0X25hbWVdYAoK
+QWRkaW5nIG5ldyBwYWNrYWdlcyB0byB5b3VyIGVudmlyb25tZW50CgotIFsg
+XSBgY29uZGEgaW5zdGFsbCAtYyBbY2hhbm5lbF9uYW1lXSBbcGFja2FnZV9u
+YW1lXWAKCgoKIyMjIEVudmlyb25tZW50IFJlY29yZGluZwoKVGhlIGNvbmRh
+IGVudmlyb25tZW50IHNldHVwIGNhbiBiZSBzYXZlZCBhcyBhIFlBTUwgZmls
+ZS4KCi0gWyBdIGBjb25kYSBlbnYgZXhwb3J0ID4gZW52aXJvbm1lbnQueW1s
+YAoKCgo=
+">Download</a>
+    <div>
+      <small>Copy into a new issue, or download and save into a repository's <code>.github/ISSUE_TEMPLATE/</code> folder</small>
+    </div>
+    </article>
+  
+  <article class="checklib-item">
+    <h2 class="checklib-item-title">Conda Environments</h2>
+    <p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+    <details>
+      <summary>Show full checklist</summary>
+      <h1 id="conda-environments">Conda Environments</h1>
+
+<p>Building / recording Conda Environment setup, for ensuring reproducable environments.</p>
+
+<p>Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html</p>
+
+<h3 id="prerequiste-knowledge">Prerequiste knowledge</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />command line basic knowledge</li>
+</ul>
+
+<h3 id="setup">Setup</h3>
+
+<p>Installing Conda / Anaconda on your system.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 2.X</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />python 3.X</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />install anaconda</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />check conda is installed (and record version number) <code class="highlighter-rouge">conda --version</code></li>
+</ul>
+
+<h3 id="usage">Usage</h3>
+
+<p>Creating a conda environment, and accessing it.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda create --name [project_name] [optional_package_list]</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda activate [project_name]</code></li>
+</ul>
+
+<p>Adding new packages to your environment</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda install -c [channel_name] [package_name]</code></li>
+</ul>
+
+<h3 id="environment-recording">Environment Recording</h3>
+
+<p>The conda environment setup can be saved as a YAML file.</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="highlighter-rouge">conda env export &gt; environment.yml</code></li>
+</ul>
+
+
+    </details>
+    <div class="form-group">
+      <textarea  id="checklib-item-_checklists_testing_testing" class="form-control">
+# Conda Environments
+
+Building / recording Conda Environment setup, for ensuring reproducable environments.
+
+Advice on reproducible environments is available in the Turing Way book: https://the-turing-way.netlify.com/reproducible_environments/reproducible_environments.html
+
+### Prerequiste knowledge
+- [ ] command line basic knowledge
+
+### Setup
+
+Installing Conda / Anaconda on your system.
+- [ ] download installation software from https://www.anaconda.com/distribution/, and note below which version you are using (python 3.X is now recommended)
+  - [ ] python 2.X
+  - [ ] python 3.X
+- [ ] install anaconda 
+- [ ] check conda is installed (and record version number) `conda --version`
+
+
+### Usage
+
+Creating a conda environment, and accessing it.
+- [ ] `conda create --name [project_name] [optional_package_list]`
+- [ ] `conda activate [project_name]`
+
+Adding new packages to your environment
+
+- [ ] `conda install -c [channel_name] [package_name]`
+
+
+
+### Environment Recording
+
+The conda environment setup can be saved as a YAML file.
+
+- [ ] `conda env export > environment.yml`
+
+
+
+
+      </textarea>
+    </div>
+
+    <button
+    class="btn btn-small btn-primary btn-copy-to-clipboard"
+    data-clipboard-target="#checklib-item-_checklists_testing_testing">Copy as markdown</button>
+    <a class="btn btn-secondary"
+    download="checklib-testing_testing.md"
+    href="data:text/plain;base64,IyBDb25kYSBFbnZpcm9ubWVudHMKCkJ1aWxkaW5nIC8gcmVjb3JkaW5nIENv
+bmRhIEVudmlyb25tZW50IHNldHVwLCBmb3IgZW5zdXJpbmcgcmVwcm9kdWNh
+YmxlIGVudmlyb25tZW50cy4KCkFkdmljZSBvbiByZXByb2R1Y2libGUgZW52
+aXJvbm1lbnRzIGlzIGF2YWlsYWJsZSBpbiB0aGUgVHVyaW5nIFdheSBib29r
+OiBodHRwczovL3RoZS10dXJpbmctd2F5Lm5ldGxpZnkuY29tL3JlcHJvZHVj
+aWJsZV9lbnZpcm9ubWVudHMvcmVwcm9kdWNpYmxlX2Vudmlyb25tZW50cy5o
+dG1sCgojIyMgUHJlcmVxdWlzdGUga25vd2xlZGdlCi0gWyBdIGNvbW1hbmQg
+bGluZSBiYXNpYyBrbm93bGVkZ2UKCiMjIyBTZXR1cAoKSW5zdGFsbGluZyBD
+b25kYSAvIEFuYWNvbmRhIG9uIHlvdXIgc3lzdGVtLgotIFsgXSBkb3dubG9h
+ZCBpbnN0YWxsYXRpb24gc29mdHdhcmUgZnJvbSBodHRwczovL3d3dy5hbmFj
+b25kYS5jb20vZGlzdHJpYnV0aW9uLywgYW5kIG5vdGUgYmVsb3cgd2hpY2gg
+dmVyc2lvbiB5b3UgYXJlIHVzaW5nIChweXRob24gMy5YIGlzIG5vdyByZWNv
+bW1lbmRlZCkKICAtIFsgXSBweXRob24gMi5YCiAgLSBbIF0gcHl0aG9uIDMu
+WAotIFsgXSBpbnN0YWxsIGFuYWNvbmRhIAotIFsgXSBjaGVjayBjb25kYSBp
+cyBpbnN0YWxsZWQgKGFuZCByZWNvcmQgdmVyc2lvbiBudW1iZXIpIGBjb25k
+YSAtLXZlcnNpb25gCgoKIyMjIFVzYWdlCgpDcmVhdGluZyBhIGNvbmRhIGVu
+dmlyb25tZW50LCBhbmQgYWNjZXNzaW5nIGl0LgotIFsgXSBgY29uZGEgY3Jl
+YXRlIC0tbmFtZSBbcHJvamVjdF9uYW1lXSBbb3B0aW9uYWxfcGFja2FnZV9s
+aXN0XWAKLSBbIF0gYGNvbmRhIGFjdGl2YXRlIFtwcm9qZWN0X25hbWVdYAoK
+QWRkaW5nIG5ldyBwYWNrYWdlcyB0byB5b3VyIGVudmlyb25tZW50CgotIFsg
+XSBgY29uZGEgaW5zdGFsbCAtYyBbY2hhbm5lbF9uYW1lXSBbcGFja2FnZV9u
+YW1lXWAKCgoKIyMjIEVudmlyb25tZW50IFJlY29yZGluZwoKVGhlIGNvbmRh
+IGVudmlyb25tZW50IHNldHVwIGNhbiBiZSBzYXZlZCBhcyBhIFlBTUwgZmls
+ZS4KCi0gWyBdIGBjb25kYSBlbnYgZXhwb3J0ID4gZW52aXJvbm1lbnQueW1s
+YAoKCgo=
+">Download</a>
+    <div>
+      <small>Copy into a new issue, or download and save into a repository's <code>.github/ISSUE_TEMPLATE/</code> folder</small>
+    </div>
+    </article>
+  
+  <article class="checklib-item">
+    <h2 class="checklib-item-title">Set up git</h2>
+    <p>Install `git`</p>
+    <details>
+      <summary>Show full checklist</summary>
+      <h1 id="set-up-git">Set up git</h1>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Install <code class="highlighter-rouge">git</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Configure <code class="highlighter-rouge">git</code>
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />configure <code class="highlighter-rouge">user.name</code></li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />configure <code class="highlighter-rouge">user.email</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="guidance">Guidance</h2>
+
+<h3 id="install-git">Install git</h3>
+
+<h4 id="on-linux">On Linux</h4>
+<ul>
+  <li>
+    <p>On Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS)</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">sudo </span>dnf <span class="nb">install </span>git-all
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>On a Debian-based distribution, (eg Ubuntu)</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">sudo </span>apt <span class="nb">install </span>git-all
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="on-osx">On OSX</h4>
+
+<ul>
+  <li>On Mavericks (10.9) or above:
+    <ul>
+      <li>
+        <p>Open a Terminal on your Mac and use the following command to check if <code class="highlighter-rouge">git</code> is installed.</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git <span class="nt">--version</span>
+</code></pre></div>        </div>
+        <p>If you don’t have git installed already, it will prompt you to install it.</p>
+      </li>
+    </ul>
+  </li>
+  <li>With Homebrew:
+    <ul>
+      <li>
+        <p>Open a Terminal on your Mac and use the following command:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  brew <span class="nb">install </span>git
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Binary installer.
+    <ul>
+      <li>A macOS Git installer is maintained and available for download at the Git website, at https://git-scm.com/download/mac.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="windows">Windows</h4>
+
+<p>The most official build is available for download on the Git website.</p>
+<ul>
+  <li>Go to https://git-scm.com/download/win and the download will start automatically.</li>
+</ul>
+
+<h3 id="configure-git">Configure git</h3>
+
+<p>The first thing you should do after you install Git is <strong>set your user name and email address</strong>. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating.</p>
+
+<p>To configure git, run the following commands in your terminal (or git BASH for windows users):</p>
+
+<h4 id="configure-username">Configure <code class="highlighter-rouge">user.name</code></h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"John Doe"</span>
+</code></pre></div></div>
+
+<h4 id="configure-useremail">Configure <code class="highlighter-rouge">user.email</code></h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.email johndoe@example.com
+</code></pre></div></div>
+
+    </details>
+    <div class="form-group">
+      <textarea  id="checklib-item-_checklists_version-control_set-up-git" class="form-control">
+# Set up git
+
+- [ ] Install `git`
+- [ ] Configure `git`
+    * [ ] configure `user.name`
+    * [ ] configure `user.email`
+
+
+## Guidance
+
+### Install git
+
+#### On Linux
+- On Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS)
+
+    ```bash
+    sudo dnf install git-all
+    ```
+
+- On a Debian-based distribution, (eg Ubuntu)
+
+    ```bash
+    sudo apt install git-all
+    ```
+
+#### On OSX
+
+- On Mavericks (10.9) or above:
+    * Open a Terminal on your Mac and use the following command to check if `git` is installed.
+
+        ```bash
+        git --version
+        ```
+        If you don’t have git installed already, it will prompt you to install it.
+- With Homebrew:
+    * Open a Terminal on your Mac and use the following command:
+
+        ```bash
+        brew install git
+        ```
+- Binary installer.
+    * A macOS Git installer is maintained and available for download at the Git website, at https://git-scm.com/download/mac.
+
+
+#### Windows
+
+The most official build is available for download on the Git website.
+- Go to https://git-scm.com/download/win and the download will start automatically.
+
+### Configure git
+
+The first thing you should do after you install Git is **set your user name and email address**. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating.
+
+To configure git, run the following commands in your terminal (or git BASH for windows users):
+
+#### Configure `user.name`
+
+```bash
+git config --global user.name "John Doe"
+```
+
+#### Configure `user.email`
+
+```bash
+git config --global user.email johndoe@example.com
+```
+
+      </textarea>
+    </div>
+
+    <button
+    class="btn btn-small btn-primary btn-copy-to-clipboard"
+    data-clipboard-target="#checklib-item-_checklists_version-control_set-up-git">Copy as markdown</button>
+    <a class="btn btn-secondary"
+    download="checklib-version-control_set-up-git.md"
+    href="data:text/plain;base64,IyBTZXQgdXAgZ2l0CgotIFsgXSBJbnN0YWxsIGBnaXRgCi0gWyBdIENvbmZp
+Z3VyZSBgZ2l0YAogICAgKiBbIF0gY29uZmlndXJlIGB1c2VyLm5hbWVgCiAg
+ICAqIFsgXSBjb25maWd1cmUgYHVzZXIuZW1haWxgCgoKIyMgR3VpZGFuY2UK
+CiMjIyBJbnN0YWxsIGdpdAoKIyMjIyBPbiBMaW51eAotIE9uIEZlZG9yYSAo
+b3IgYW55IGNsb3NlbHktcmVsYXRlZCBSUE0tYmFzZWQgZGlzdHJpYnV0aW9u
+LCBzdWNoIGFzIFJIRUwgb3IgQ2VudE9TKQoKICAgIGBgYGJhc2gKICAgIHN1
+ZG8gZG5mIGluc3RhbGwgZ2l0LWFsbAogICAgYGBgCgotIE9uIGEgRGViaWFu
+LWJhc2VkIGRpc3RyaWJ1dGlvbiwgKGVnIFVidW50dSkKCiAgICBgYGBiYXNo
+CiAgICBzdWRvIGFwdCBpbnN0YWxsIGdpdC1hbGwKICAgIGBgYAoKIyMjIyBP
+biBPU1gKCi0gT24gTWF2ZXJpY2tzICgxMC45KSBvciBhYm92ZToKICAgICog
+T3BlbiBhIFRlcm1pbmFsIG9uIHlvdXIgTWFjIGFuZCB1c2UgdGhlIGZvbGxv
+d2luZyBjb21tYW5kIHRvIGNoZWNrIGlmIGBnaXRgIGlzIGluc3RhbGxlZC4K
+CiAgICAgICAgYGBgYmFzaAogICAgICAgIGdpdCAtLXZlcnNpb24KICAgICAg
+ICBgYGAKICAgICAgICBJZiB5b3UgZG9u4oCZdCBoYXZlIGdpdCBpbnN0YWxs
+ZWQgYWxyZWFkeSwgaXQgd2lsbCBwcm9tcHQgeW91IHRvIGluc3RhbGwgaXQu
+Ci0gV2l0aCBIb21lYnJldzoKICAgICogT3BlbiBhIFRlcm1pbmFsIG9uIHlv
+dXIgTWFjIGFuZCB1c2UgdGhlIGZvbGxvd2luZyBjb21tYW5kOgoKICAgICAg
+ICBgYGBiYXNoCiAgICAgICAgYnJldyBpbnN0YWxsIGdpdAogICAgICAgIGBg
+YAotIEJpbmFyeSBpbnN0YWxsZXIuCiAgICAqIEEgbWFjT1MgR2l0IGluc3Rh
+bGxlciBpcyBtYWludGFpbmVkIGFuZCBhdmFpbGFibGUgZm9yIGRvd25sb2Fk
+IGF0IHRoZSBHaXQgd2Vic2l0ZSwgYXQgaHR0cHM6Ly9naXQtc2NtLmNvbS9k
+b3dubG9hZC9tYWMuCgoKIyMjIyBXaW5kb3dzCgpUaGUgbW9zdCBvZmZpY2lh
+bCBidWlsZCBpcyBhdmFpbGFibGUgZm9yIGRvd25sb2FkIG9uIHRoZSBHaXQg
+d2Vic2l0ZS4KLSBHbyB0byBodHRwczovL2dpdC1zY20uY29tL2Rvd25sb2Fk
+L3dpbiBhbmQgdGhlIGRvd25sb2FkIHdpbGwgc3RhcnQgYXV0b21hdGljYWxs
+eS4KCiMjIyBDb25maWd1cmUgZ2l0CgpUaGUgZmlyc3QgdGhpbmcgeW91IHNo
+b3VsZCBkbyBhZnRlciB5b3UgaW5zdGFsbCBHaXQgaXMgKipzZXQgeW91ciB1
+c2VyIG5hbWUgYW5kIGVtYWlsIGFkZHJlc3MqKi4gVGhpcyBpcyBpbXBvcnRh
+bnQgYmVjYXVzZSBldmVyeSBHaXQgY29tbWl0IHVzZXMgdGhpcyBpbmZvcm1h
+dGlvbiwgYW5kIGl04oCZcyBpbW11dGFibHkgYmFrZWQgaW50byB0aGUgY29t
+bWl0cyB5b3Ugc3RhcnQgY3JlYXRpbmcuCgpUbyBjb25maWd1cmUgZ2l0LCBy
+dW4gdGhlIGZvbGxvd2luZyBjb21tYW5kcyBpbiB5b3VyIHRlcm1pbmFsIChv
+ciBnaXQgQkFTSCBmb3Igd2luZG93cyB1c2Vycyk6CgojIyMjIENvbmZpZ3Vy
+ZSBgdXNlci5uYW1lYAoKYGBgYmFzaApnaXQgY29uZmlnIC0tZ2xvYmFsIHVz
+ZXIubmFtZSAiSm9obiBEb2UiCmBgYAoKIyMjIyBDb25maWd1cmUgYHVzZXIu
+ZW1haWxgCgpgYGBiYXNoCmdpdCBjb25maWcgLS1nbG9iYWwgdXNlci5lbWFp
+bCBqb2huZG9lQGV4YW1wbGUuY29tCmBgYAo=
+">Download</a>
+    <div>
+      <small>Copy into a new issue, or download and save into a repository's <code>.github/ISSUE_TEMPLATE/</code> folder</small>
+    </div>
+    </article>
   
 
 </div>
