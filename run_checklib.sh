@@ -3,9 +3,12 @@
 # Provide help information if the command line tool is run either without an argument or with the --help argument 
 if [ $# -eq 0 ] || [ "$1" == "--help" ]
 then
-    echo 'This is the checklib tool'
-    echo 'To install the direred checklists in your repo run this script with the names of the checklists you want to include as arguments.'
-    echo 'To list the available checlists do ./run_checklib --ls_lists'
+    echo 'This is the checklib tool. It should be run with the prefix bash'
+    echo 'To install the desired checklists in your repo run this script with the names of the checklists you want to include as arguments.'
+    echo 'To list the available checklists do ./run_checklib --ls_lists'
+    echo 'For example to add the conda-environment.md and sharing-material.md checklists you would run:'
+    echo 'bash ./run_checklib.sh conda-environment.md sharing-material.md
+'
     exit 0 
 elif [ "$1" == "--ls_lists" ] # Provide a list of the available checklist if the --ls_lists argument is supplied
 then
