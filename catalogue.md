@@ -15,5 +15,11 @@
 - [ ] Set up git: install Git i& set your user name and email address
 - [ ] Set up GitHub authorisation through https: generate GitHub Personal Authorisation Token and 
 
+## Open research
 
+- [ ] Make your data open
+- [ ] Make your project open source
+- [ ] Make use of open hardware and make your own harware open.
+- [ ] Make your research outputs open access
+- [ ] Make your research notebooks open
 
