@@ -16,7 +16,7 @@ Currently you need a local copy of the checklist library to use the tool, as wel
 
 - [ ] The first step is to go ahead and clone `checklib` so you have local access to the checklists.
    ```bash
-   git clone https://github.com/annakrystalli/checklib
+   git clone https://github.com/checklib/checklib
    ```
    Make sure to pull before using each time to ensure you have an up to date version of the checklists.
 - [ ] Navigate to the root of your local copy of `checklib`.
